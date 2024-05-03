@@ -29,7 +29,6 @@ y = data[:, 1]
 # Next define the Gaussian function being used:
 
 def hbeta(x,a,b,c,d):
-
     return a+b*np.exp(-(x-c)**2/(2*d**2))
 
 # Create a reasonable uncertainty by examining the data. Next, assign the Lmfit Model function to a variable and then use the make_params function of the variable to get your parameters
@@ -53,6 +52,9 @@ plt.title('Lmfit')
 plt.legend()
 
 # This should print out the full report of the data set and the fit, along with plotting dataset, fit line, and initial fit line
+<img width="397" alt="Screenshot 2024-05-02 at 9 48 56 PM" src="https://github.com/NikhilK29/PHYS265-spring24-lab1/assets/163023737/bc1115fa-3dd1-4ae4-a843-f809011079da">
+<img width="572" alt="Screenshot 2024-05-02 at 10 43 19 PM" src="https://github.com/NikhilK29/PHYS265-spring24-lab1/assets/163023737/b4c05c82-4854-449f-bf6c-38da48b012e6">
+
 
 
 # Example 2-- Two dimensional peaks fit

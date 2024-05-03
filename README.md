@@ -22,12 +22,14 @@ from lmfit import Model
 data = np.loadtxt('ngc253_hb.txt', encoding='utf-8-sig')
 
 x = data[:, 0]
+
 y = data[:, 1]
 
 # Note that if you dont set encoding to utf-8, numpy will interpret the hidden text as a string and be unable to load the file
 # Next define the Gaussian function being used:
 
 def hbeta(x,a,b,c,d):
+
     return a+b*np.exp(-(x-c)**2/(2*d**2))
 
 # Create a reasonable uncertainty by examining the data. Next, assign the Lmfit Model function to a variable and then use the make_params function of the variable to get your parameters

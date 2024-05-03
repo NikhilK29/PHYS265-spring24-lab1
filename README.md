@@ -1,4 +1,4 @@
-# PHYS265-spring24-lab1
+# PHYS265-spring24-CODE-PROJECT
 # Nikhil Khosla
 #Nikhil
 
